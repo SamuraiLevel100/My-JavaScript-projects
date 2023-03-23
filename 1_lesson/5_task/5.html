@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5_task</title>
+</head>
+<body>
+    <script>
+        let sizeFlashDrive= parseFloat(prompt("Введіть ємність флешки в Гб:"));
+        let sizeFlashDriveMB = sizeFlashDrive * 1024;
+        const filesCount = Math.floor(sizeFlashDriveMB / 820);
+        alert(`A flash drive with a size of ${sizeFlashDrive} GB can fit ${filesCount} file with a size of 820 MB`)
+    </script>
+</body>
+</html>
