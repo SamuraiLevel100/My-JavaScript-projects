@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(68, 26, 26); /* білий фон для всієї сторінки */
+}
+
+#clock {
+  font-size: 3em;
+  text-align: center;
+  margin: 50px , 50px,50px,50px;
+  background-color: green; /* зелений фон для годинника */
+  color: white; /* білий колір тексту */
+  border-radius: 10px;
+}
+
+#buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: green; /* зелений фон для кнопок */
+  color: white; /* білий колір тексту кнопок */
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+#field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#addSecondButton,
+#subtractSecondButton {
+  margin-top: 20px;
+}
+
