@@ -1,0 +1,29 @@
+/* Встановлюємо чорний колір для фону сторінки */
+body {
+    background-color:   grey;
+  }
+  
+  .wrapper {
+    /* Центруємо елемент */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .display {
+    /* Задаємо градієнт для рамки годинника */
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to bottom, #ff0000, #0000ff);
+    /* Задаємо інші стилі для рамки годинника */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Встановлюємо білий колір для цифр на циферблаті */
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem;
+  }
+  
