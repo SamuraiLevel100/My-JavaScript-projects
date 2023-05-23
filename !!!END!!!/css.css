@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f1e27;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  height: 60px;
+  background-color: #1f1e27;
+  border-radius: 20px;
+
+}
+
+.header__logo {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.header__logo img {
+  width: 55px;
+  height: auto;
+}
+
+
+.header__search {
+  padding: 8px;
+  border: 2px solid #1a191f;
+  border-radius: 20px;
+  outline: none;
+}
+
+
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movie {
+  width: 240px;
+  margin: 10px;
+  position: relative;
+}
+
+.movie__cover-inner {
+  position: relative;
+  height: 360px;
+}
+
+.movie__cover {
+  max-width: 100%;
+  height: 100%;
+}
+
+.movie__cover--darkened {
+  background-color: #000000;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.movie__cover--darkened:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+.movie__info {
+  padding: 10px 0;
+}
+
+.movie__title {
+  font-size: 16px;
+  color: #ffffff;
+}
+.movie__title:hover{
+  color: #ffd80e;
+}
+
+.movie__category {
+  font-size: 14px;
+  color: #ffd80e;
+}
+
+.movie__average {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 0;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a191f;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.movie__average--green {
+  border: 1px solid green;
+}
+
+.movie__average--orange {
+  border: 1px solid orange;
+}
+
+.movie__average--red {
+  border: 1px solid red;
+}
+
+/* Модальне вікно */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: width 2s;
+}
+
+.modal--show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__card {
+  background-color: #ffffff;
+  max-width: 600px;
+  padding: 16px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  background-color: #1a191f;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__movie-backdrop {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.modal__movie-info {
+  margin-left: 20px;
+}
+
+.modal__button-close {
+  padding: 5px;
+  margin: 10px;
+  align-self: center;
+}
+
+.modal__movie-site {
+  color: #ffd80e;
+}
+
+ul li {
+  padding: 5px;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Кнопка */
+#loadMoreButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #ffc107; /* Змінна для коліру кнопки */
+  color: #fff; /* Змінна для коліру тексту */
+  font-size: 16px; /* Змінна для розміру тексту */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#loadMoreButton:hover {
+  background-color: #e0a800; /* Змінна для коліру кнопки при наведенні */
+}
+
+#loadMoreButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffc107; /* Змінна для коліру обводки кнопки при фокусі */
+}
+/* Фільтер по жанрам */
+#genreList {
+  background-color: #1f1e27;
+  padding: 10px;
+  border: 1px solid yellow;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+#genreList a {
+  color: white;
+  font-size: 16px; /* Замініть значення на бажаний розмір */
+  text-decoration: none; /* Відміна підкреслення */
+  margin-right: 10px; /* Встановлення відступу між елементами */
+}
+
+#genreList a:hover{
+  color: #f7f302;
+}
